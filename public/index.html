@@ -4,58 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone Pages</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 100vw;
-            height: 100vh;
-        }
-
-        header {
-            background-color: yellow;
-        }
-
-        main {
-            background-color: green;
-        }
-
-        footer {
-            background-color: blue;
-        }
-
-        .left {
-            float: left;
-        }
-
-        .right {
-            float: right;
-        }
-
-        .clear {
-            clear: both;
-        }
-    </style>
-
+    <title>My Clone Pages</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <a href="index.html">
-                <h1>Clone Pages</h1>
-            </a>
+    <div class="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1>
+                    <a href="index.html"> My clone pages
+                </h1>
+                <nav id="nav">
+                    <ul>
+                        <li class="one"></li>
+                        <li class="two"><a href="#">엘리스 실습</a> </li>
+                        <li class="three"><a href="#">자체 실습</a> </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <main>
+
+        <main id="main" role="main">
             <article>
-                <a href="#">Clone Pages</a>
-            </article>
-            <article>
-                <a href="./elice/elice-index.html">Elice Academy Page</a>
+                <h2>
+                    <a href="./elice/elice-index.html">Elice Academy Page</a>
+                </h2>
+                <div>
+                    <img src="" alt="">
+                </div>
             </article>
             <article>
                 <a href="./elice-krocket/krocket-index.html">Elice Krocket Page</a>
@@ -70,7 +48,8 @@
                 <a href="#">Facebook</a>
             </article>
         </main>
-        <footer>
+
+        <footer id="footer">
             <div>
                 <p>
                     Copyright © 2020 Elice. All rights reserved.
