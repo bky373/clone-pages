@@ -389,7 +389,7 @@ label {
 
 /* 큰 가로 화면 영역 CSS */
 /* media query */
-@media screen and (min-width:450px) {
+@media screen and (min-width:600px) {
     .bigScreen {
         position: fixed;
         display: flex;
