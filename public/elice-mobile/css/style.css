@@ -131,39 +131,6 @@ a {
     height: 25px;
 }
 
-
-/* 메인 상세 페이지 */
-#header .back {
-    position: absolute;
-
-    width: 25px;
-    height: 25px;
-
-    background: url('../img/main_details/back_arrow.png');
-    background-size: 100%;
-
-    top: 12px;
-    left: 16px;
-
-    cursor: pointer;
-}
-
-
-/* 상세 페이지 이미지 슬라이드 코드 */
-#main #main_slider {
-    position: relative;
-    width: 100%;
-    height: 280px;
-    margin-bottom: 40px;
-}
-
-#main #main_slider img {
-    height: 280px;
-}
-
-
-
-
 #side_nav {
     position: fixed;
 
@@ -235,4 +202,86 @@ a {
     line-height: 22px;
     color: white;
     opacity: 0.7;
+}
+
+
+
+
+
+/* 메인 상세 페이지 */
+#header .back {
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+
+    background: url('../img/main_details/back_arrow.png');
+    background-size: 100%;
+
+    top: 12px;
+    left: 16px;
+
+    cursor: pointer;
+}
+
+
+/* 상세 페이지 이미지 슬라이드 코드 */
+#main #main_slider {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    margin-bottom: 40px;
+}
+
+#main #main_slider img {
+    height: 280px;
+}
+
+
+/* 상세 페이지 본문 영역  */
+#main section {
+    padding: 0 24px;
+}
+
+#main section h2 {
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#main article {
+    margin-bottom: 40px;
+}
+
+#main article img {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+#main article h3 {
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+#main article p,
+#main #question p {
+    font-size: 15px;
+}
+
+#main #parallax {
+    width: 100%;
+    background: url(../img/main_details/parallax.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 50px 0;
+    margin-bottom: 20px;
+
+    text-align: center;
+    color: #ffffff;
+}
+
+#main #question p {
+    margin-bottom: 100px;
+    text-align: center;
 }
