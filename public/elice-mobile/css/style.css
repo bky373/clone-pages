@@ -1,0 +1,77 @@
+/* Default CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+img {
+    vertical-align: top;
+    border: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+
+
+/* index.html */
+#intro .fullBackground {
+    background-position: center center;
+    background-attachment: fixed;
+    block-size: cover;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#intro .overlay {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+#intro .textWrap {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#intro .textWrap h1 {
+    margin-bottom: 16px;
+    color: #ffffff;
+    font-size: 35px;
+}
+
+#intro .textWrap a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
