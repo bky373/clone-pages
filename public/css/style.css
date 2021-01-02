@@ -2,16 +2,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
 
-.body__container {
-    font-family: 'Noto Sans KR', sans-serif;
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+.body__container {
+    font-family: 'NEXON Lv1 Gothic OTF', 'Noto Sans KR', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #333333;
+    word-break: keep-all;
 }
 
 a {
     text-decoration: none;
+    color: #333333;
+}
+
+strong {
+    font-weight: 600;
 }
 
 /* FLOAT CLEARFIX */
@@ -41,15 +53,60 @@ a {
     box-sizing: border-box;
 }
 
+
+/* SUMMARY */
+.summary {
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+.summary .title-group {
+    display: flex;
+    height: 23px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.summary .summary--liner {
+    width: 4px;
+    height: 100%;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    background-color: #F4A4A4;
+}
+
+.summary .summary--title {
+    display: inline;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 100%;
+    color: #505050;
+}
+
+.summary .summary--title:hover {
+    color: #e29595;
+    cursor: pointer;
+}
+
+.summary .summary--description {
+    color: #535353;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+}
+
+
+
+
 /* HEADER */
 header {
-    border-bottom: 1px solid #949494bf;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+    box-shadow: 0 0 10px rgba(248, 206, 206, 0.35);
     background: #FFF;
 }
 
 header .inner {
-    height: 76px;
+    height: 60px;
 }
 
 header .intro-group {
@@ -59,15 +116,15 @@ header .intro-group {
 }
 
 header .intro-group a {
-    font-size: 19px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     color: #474747;
-    padding-left: 22px;
+    margin-left: 22px;
     box-sizing: border-box;
 }
 
 header .intro-group a:hover {
-    color: #bc8f8f;
+    color: #e2a9a9;
 }
 
 header .menu-group {
@@ -84,11 +141,100 @@ header .menu-group .menu-list {
 header .menu-group li a {
     padding: 17px;
     display: block;
-    font-size: 17px;
+    font-size: 14px;
+    font-weight: 600;
     color: #535353;
     box-sizing: border-box;
 }
 
 header .menu-group li a:hover {
-    color: #bc8f8f;
+    color: #e2a9a9;
+}
+
+
+
+
+/* MAIN */
+.section--main {
+    background-color: #fff9f9;
+}
+
+.section--main .inner {
+    margin-top: 1px;
+    padding: 30px 50px;
+}
+
+#elice-group {
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.section--main .elice-list li {
+    float: left;
+    width: 33.33333%;
+    padding: 35px 30px;
+    box-sizing: border-box;
+}
+
+.section--main .elice-list .photo {
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.section--main .elice-list .photo.one {
+    background-image: url("../elice/elice-images/img1.png");
+    background-color: #ffe2e2;
+}
+
+.section--main .elice-list .photo.two {
+    background-image: url("../elice/elice-images/img4.png");
+    background-color: #BFDFF2;
+}
+
+.section--main .elice-list .photo.three {
+    background-image: url("../elice/elice-images/img5.png");
+    background-color: #CBF2EE;
+}
+
+.elice-list .photo.one:hover {
+    background-color: #ffecec;
+}
+
+.elice-list .photo.two:hover {
+    background-color: #dceffa;
+}
+
+.elice-list .photo.three:hover {
+    background-color: #ddf8f5;
+}
+
+.elice-list .photo:hover {
+    transform: scale(.95);
+}
+
+.section--main .elice-list li h3 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: #505050;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.section--main .elice-list li a:hover {
+    color: #e2a9a9;
+}
+
+.section--main .elice-list li p {
+    padding: 15px;
+    border-bottom: 1px solid #b3b3b3;
+    font-size: 12px;
+    line-height: 1.35;
+    color: #6e6e6e;
+    box-sizing: border-box;
 }
