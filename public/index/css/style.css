@@ -190,17 +190,17 @@ header .menu-group li a:hover {
 }
 
 .section--main .elice-list .photo.one {
-    background-image: url("../elice/elice-images/img1.png");
+    background-image: url("../../elice-academy/elice-images/img1.png");
     background-color: #ffe2e2;
 }
 
 .section--main .elice-list .photo.two {
-    background-image: url("../elice/elice-images/img4.png");
+    background-image: url("../../elice-academy/elice-images/img4.png");
     background-color: #BFDFF2;
 }
 
 .section--main .elice-list .photo.three {
-    background-image: url("../elice/elice-images/img5.png");
+    background-image: url("../../elice-academy/elice-images/img5.png");
     background-color: #CBF2EE;
 }
 
