@@ -91,6 +91,7 @@ a {
     float: right;
 }
 
+
 /* SUMMARY */
 .summary__title {
     font-size: 38px;
@@ -106,6 +107,7 @@ a {
     line-height: 1.5;
 }
 
+
 /* SECTION & INNER */
 .section {
     position: relative;
@@ -117,6 +119,8 @@ a {
     box-sizing: border-box;
     position: relative;
 }
+
+
 
 
 /* HEADER */
@@ -206,10 +210,13 @@ header .sub-menu li a {
     font-size: 13px;
     color: #3c4146;
 }
-
+ 
 header .sub-menu li a:hover {
     color: #4078c0;
 }
+
+
+
 
 /* VISUAL */
 .section--visual {
@@ -364,4 +371,22 @@ header .sub-menu li a:hover {
 .section--feature .tiles li p {
     font-size: 14px;
     color: #767676
+}
+
+
+
+
+/* WHERE IS  */
+.section--where-is .inner {
+    padding-top: 80px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-bottom: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    box-sizing: border-box;
 }
