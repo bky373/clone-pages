@@ -26,6 +26,11 @@ strong {
     font-weight: 600;
 }
 
+strong:hover {
+    color: #e29595;
+    cursor: pointer;
+}
+
 /* FLOAT CLEARFIX */
 .clearfix::after {
     content: "";
