@@ -447,8 +447,6 @@ header .sub-menu li a:hover {
 
 
 /* FOOTER */
-footer {}
-
 footer .inner {
     padding: 50px 0;
     border-top: 1px solid #eee;
@@ -464,6 +462,10 @@ footer .site-links li {
     color: #767676;
 }
 
+footer .site-links li:last-child {
+    margin-right: 0;
+}
+
 footer .site-links li a {
     color: #4078c0;
 }
@@ -474,171 +476,15 @@ footer .site-links li a:hover {
 
 footer .logo {
     position: absolute;
+    width: 24px;
+    height: 24px;
+    margin: auto;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    width: 24px;
-    height: 24px;
 }
 
 footer .logo:hover svg {
     fill: #4078c0;
-}
-
-
-
-
-/* MEDIA */
-@media (max-width: 1024px) {
-    header.section .inner {
-        max-width: none;
-        height: auto;
-        padding: 0 20px;
-    }
-
-    header .menu-group,
-    header .sign-group {
-        float: none;
-    }
-
-    header .menu-group {
-        display: block;
-    }
-
-    header .logo {
-        padding: 12px 0;
-    }
-
-    header .main-menu {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    header .main-menu li {
-        border-top: 1px solid #e5e5e5;
-    }
-
-    header .main-menu li a {
-        padding: 16px 0;
-    }
-
-    header .sign-group {
-        display: block;
-        padding: 10px 0 20px;
-    }
-
-    header .btn-group {
-        display: block;
-    }
-
-    header .btn-group .btn {
-        justify-content: center;
-    }
-
-    header .btn-group .sign-in {
-        margin-right: 0;
-        margin-bottom: 12px;
-    }
-
-    #search-form {
-        margin-top: 12px;
-        margin-right: 0;
-    }
-
-    #search {
-        width: 100%;
-        height: 42px;
-        text-align: center;
-    }
-
-    header .sub-menu {
-        margin-top: 12px;
-        margin-right: 0;
-        justify-content: center;
-    }
-
-    header .toggle {
-        display: none;
-    }
-
-    header .toggle.on {
-        display: block;
-    }
-
-    #toggle-btn {
-        display: block;
-    }
-
-
-
-
-    /* VISUAL */
-    .section--visual {
-        background-image: url("../img/bg-small.jpg");
-    }
-
-    .section--visual .inner {
-        display: block;
-        max-width: none;
-        padding: 80px 20px;
-    }
-
-    .section--visual .summary {
-        text-align: center;
-        margin-right: 0;
-        margin-bottom: 50px;
-    }
-
-    #sign-form {
-        width: auto;
-        max-width: 500px;
-        margin: 0 auto;
-    }
-
-
-
-
-    /* FEATURE */
-    .section--feature .summary {
-        padding: 66px 20px 0 20px;
-    }
-
-    .section--feature .tiles li {
-        width: 50%;
-    }
-
-    .section--feature .tiles li:nth-child(2) {
-        border-right: none;
-    }
-
-    .section--feature .tiles li img {
-        padding: 14px 30% 24px;
-    }
-
-
-
-
-    /* WHERE IS & PRICING CARD */
-    .section--where-is .inner {
-        max-width: none;
-        padding: 80px 20px 0 20px;
-    }
-
-    .section--pricing .card .cell2 {
-        font-size: 20px;
-    }
-
-
-
-
-    /* FOOTER */
-    footer .inner {
-        padding: 50px 20px;
-    }
-
-    footer .logo {
-        display: none;
-    }
 }
